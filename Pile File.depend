@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1488362834 source:c:\users\sczb8604\documents\github\pile\file.c
+	<stdio.h>
+	<stdlib.h>
+

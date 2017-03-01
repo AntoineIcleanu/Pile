@@ -22,15 +22,14 @@ void empiler (pile *Pile, int nvNombre){        //ici création de la fonction d'
 };
 
 void depile (pile *Pile){                       //création de la fonction depile
+    //carre *carreDepile;
     if (Pile != NULL){                          //si la pile est vide on va rien pouvoir dépiler donc il faut jeter '-'
-        carre *carreDepile = Pile *premier;     //L'élément à dépiler est la valeur du premier élément de la pile
-        Pile *premier = carreDepile *suivant;   //le "premier" de la pile devient le suivant après carreDepile
+        carre *carreDepile = Pile->premier;     //L'élément à dépiler est la valeur du premier élément de la pile
+        Pile->premier = carreDepile->suivant;   //le "premier" de la pile devient le suivant après carreDepile
         free(carreDepile);                      // libére l'espace mémoire de ce "truc"
     }
 };
 
 int main()
 {
-    printf("Hello world!\n");
-    return 0;
 }
